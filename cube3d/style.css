@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+.container {
+	position: relative;
+	margin: 200px auto;
+	width: 300px;
+	height: 300px;
+	perspective: 500px;
+}
+
+.cube {
+	width: inherit;
+	height: inherit;
+	transform-style: preserve-3d;
+}
+
+.side {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border: 5px solid rebeccapurple;
+	font: normal 70px Arial;
+	text-align: center;
+	line-height: 300px;
+}
+
+.front {
+	transform: translateZ(150px);
+	color: mediumpurple;
+	font-size: 20px;
+}
+
+.back {
+	transform: rotateY(180deg) translateZ(150px);
+	color: orange;
+}
+
+.right {
+	transform: rotateY(90deg) translateZ(150px);
+	color: pink;
+	font-size: 30px;
+	transform: rotateY(180);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(150px);
+  color: gold;
+  font-size: 25px;
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(150px);
+  color: paleturquoise;
+  font-size: 20px;
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+}
+.text {
+  font-size: 20px;
+  color: rebeccapurple;
+  text-decoration: underline;
+}
+.inbox {
+  display: flex;
+  width: 1000px;
+  margin-left: 1000px;
+  border: 2px solid rebeccapurple;
+  padding: 10px 20px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.inbox-text {
+  color: rebeccapurple;
+  font-size: 35px;
+  margin-right: 80px;
+  margin-top: 25px;
+}
+.str1 {
+  width: 0px;
+  height: 0px;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 120px solid rebeccapurple;
+  margin-bottom: 15px;
+}
+.str2 {
+  width: 0px;
+  height: 0px;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 120px solid rebeccapurple;
+}
+.str3 {
+  width: 0px;
+  height: 0px;
+  border-right: 120px solid rebeccapurple;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+}
+.str4{
+  width: 0px;
+  height: 0px;
+  border-left: 120px solid rebeccapurple;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  margin-left: 16px;
+}
+.strelki {
+  display: flex;
+  align-items: center;
+}
+.inbox-strelki2 {
+  margin-left: 20px;
+  display: flex;
+}
+.nishn {
+   margin: 50px;
+}
+.menu {
+  position: relative;
+  color: rebeccapurple;
+  font-size: 30px;
+  display: inline-block;
+  justify-content: center;
+  border: 3px solid rebeccapurple;
+  border-radius: 80px;
+  padding-right: 35px;
+  padding-left: 35px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  animation: slidetop 1.5s infinite;
+}
+.menu:hover {
+  background-color: white;
+  border: 7px solid rebeccapurple;
+  transition: 0.3s ease-in-out;
+}
+.mainn {
+  display: flex;
+  justify-content: center;
+}
+.menu-realtext {
+  padding: 10px 30px;
+  font-size: 60px;
+}
+@keyframes slidetop {
+  from {top: 0px;}
+  50% {top: -20px;}
+  100% {top: 0px;}
+}
+.backtext {
+  font-size: 17px;
+  margin-bottom: 50px;
+}
